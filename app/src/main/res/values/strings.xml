@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">滴滴导游</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要的权限。请点击“设置”-“权限”-打开所需的权限。</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string-array name="offline_map_del_or_update">
+        <item>删除</item>
+        <item>检查更新</item>
+    </string-array>
+    <string name="welfare_share_img">welfare_share_img</string>
+    <string name="map_desc">\t\t\t\滴滴导游是一款地图实用工具。具有定位功能、实时路况信息、地点查询、公交路线推荐、驾车路线推荐、步行路线推荐、
+        骑行路线推荐、离线地图、路线规划等功能，地图模式有标准模式、卫星模式、夜间模式、导航模式四种模式。</string>
+</resources>

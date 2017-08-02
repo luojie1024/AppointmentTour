@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hnulab.appointmenttour.ui.home.MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/search_bar_padding"
+        android:paddingRight="@dimen/search_bar_padding"
+        android:paddingTop="@dimen/search_bar_padding"
+        app:hint="查找地点、公交、地铁" />
+   <!-- <include
+        layout="@layout/main_bottom_view" />-->
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:alpha="0.8"
+        app:bmb_buttonEnum="simpleCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_6_3"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_6_3"
+        app:bmb_showDuration="1000"
+        app:bmb_hideDuration="500"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/location"
+        android:tint="@color/main_color"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:fab_size="mini"
+        android:alpha="0.8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="5dp"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/checking"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:fab_size="mini"
+        android:alpha="0.8"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/map_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentRight="true"
+        app:fabGravity="top_end"
+        android:alpha="0.8"
+        app:fabMenu="@menu/menu_map_mode"
+        app:miniFabDrawableTint="@color/main_color"
+        app:fabDrawable="@mipmap/map_mode"
+        app:fabDrawableTint="@color/main_color"
+        app:touchGuard="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="寻找附近的导游"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back_arrow_blue"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        />
+</RelativeLayout>
